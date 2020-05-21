@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>唐晨的博客</title>
+  
+  <subtitle>Blog of Travis Tang</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://tangg555.github.io/"/>
+  <updated>2020-05-19T10:57:39.754Z</updated>
+  <id>https://tangg555.github.io/</id>
+  
+  <author>
+    <name>唐晨</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Dijkstra算法的简单python实现（附代码）</title>
+    <link href="https://tangg555.github.io/2020/05/19/dijkstra-algorithms/"/>
+    <id>https://tangg555.github.io/2020/05/19/dijkstra-algorithms/</id>
+    <published>2020-05-19T10:43:00.000Z</published>
+    <updated>2020-05-19T10:57:39.754Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Dijkstra算法介绍：&quot;&gt;&lt;a href=&quot;#Dijkstra算法介绍：&quot; class=&quot;headerlink&quot; title=&quot;Dijkstra算法介绍：&quot;&gt;&lt;/a&gt;Dijkstra算法介绍：&lt;/h2&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="编程算法" scheme="https://tangg555.github.io/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="Dijkstra" scheme="https://tangg555.github.io/tags/Dijkstra/"/>
+    
+      <category term="算法" scheme="https://tangg555.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="python" scheme="https://tangg555.github.io/tags/python/"/>
+    
+  </entry>
+  
+</feed>

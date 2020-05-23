@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Others",
+		"show_name": "其他",
+        "cover": "Others/avatar.jpg",
+        "description": "其他的一些照片",
+        "photos": [
+            "avatar.jpg"
+        ]
+    }
+]

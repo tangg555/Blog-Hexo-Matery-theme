@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="/css/gallery.css">
+<link type="text/css" href="/libs/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link type="text/css" href="/libs/justifiedGallery/justifiedGallery.min.css" rel="stylesheet">
+
+<%- partial('_partial/post-cover') %>
+<%
+let galleries = [];
+if (site.data && site.data.galleries) {
+    galleries = site.data.galleries;
+}
+var pageTitle = page.title;
+function getCurrentGallery(galleries, pageTitle) {
+    for (let i = 0; i < galleries.length; i++) {
+        if (galleries[i]['name'] == pageTitle) {
+            return galleries[i];
+        }
+    }
+}
+var currentGallery = getCurrentGallery(galleries, pageTitle)
+
+var photos = currentGallery.photos;
+
+let imageStr = ''
+
+for (var i = 0, len = photos.length; i < len; i++) {
+    var photo = photos[i];
+
+    imageStr += "<a href=\"" + photo + "\"" +
+            "     class=\"photo-item\" rel=\"example_group\"" +
+            "     data-fancybox=\"images\">" +
+            "      <img src=\"" + photo + "\"" +
+            "       alt=" + photo + ">\n" +
+            "    </a>"
+
+}
+%>
+
+<div class="container">
+    <div class="photo-wrapper">
+        <div class="waterfall" id="mygallery">
+            <%- imageStr %>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="/libs/fancybox/fancybox.js"></script>
+<script src="/libs/justifiedGallery/justifiedGallery.min.js"></script>
+<script>
+
+  $("a[rel=example_group]").fancybox();
+  $("#mygallery").justifiedGallery({margins: 5, rowHeight: 150});
+
+</script>
